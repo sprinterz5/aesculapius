@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<header>
+	<div class="container">
+		<ul>
+			<a href="index.html" class="logo"><li>aesculapius</li></a>
+			<nav>
+				<a href="#creator"><li>Создать меню</li></a>
+				<a href="#team"><li>О нас</li></a>
+				<a href="#contacts"><li>Контакты</li></a>
+			</nav>
+		</ul>
+	</div>
+</header>
+<img class="header-img" src="img/background.png">
+<div class="overview">
+	<div class="container">
+		<div class="overview-inner">
+			<div class="overview-subtitle">
+				Авто-создание диеты-меню
+			</div>
+			<div class="overview-title">
+				Ваш помощник для правильного питания
+			</div>
+			<a href="#creator"class="overview-button">
+				Воспользоваться
+			</a>
+		</div>
+		
+	</div>
+</div>
+<div id="desc" class="description">
+	<div class="container">
+		<div class="description-inner">
+			<div class="description-upper">
+				<div class="description-title">
+					Эскулап - это бог врачевания в Древнем Риме. 
+				</div>
+				<div class="description-subtitle">
+					Его почитали за его целебные способности. Он был наделен уникальной способностью восставать из мертвых.
+				</div>
+			</div>
+			<div class="description-cards">
+				<div class="description-card">
+					<div class="description-card-number">
+						1
+					</div>
+					<div class="description-card-title">
+						Полезно
+					</div>
+					<div class="description-card-subtitle">
+						Вы получаете доступ к абсолютно полезным, сбалансированным и здоровым диетам.
+					</div>
+				</div>
+				<div class="description-card">
+					<div class="description-card-number">
+						2
+					</div>
+					<div class="description-card-title">
+						Быстро
+					</div>
+					<div class="description-card-subtitle">
+						Вводя ваши данные, мы можем автоматически предоставить вам самую подходящую диету.
+					</div>
+				</div>
+				<div class="description-card">
+					<div class="description-card-number">
+						3
+					</div>
+					<div class="description-card-title">
+						Много
+					</div>
+					<div class="description-card-subtitle">
+						Наши базы данных состоят из множества продуктов и блюд с безумно полезными, заживляющими свойствами.
+					</div>
+				</div>
+				<div class="description-card">
+					<div class="description-card-number">
+						4
+					</div>
+					<div class="description-card-title">
+						Рассчитано
+					</div>
+					<div class="description-card-subtitle">
+						Меню составляется на основе количества калорий, ваших характеристик и пожеланий.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="creator" class="guide">
+	<div class="container">
+		<div class="guide-upper">
+			<div class="guide-subtitle">
+				Как это работает?
+			</div>
+			<div class="guide-title">
+			 	Что мне сделать, чтобы создать мое диетическое меню?
+			</div>
+		</div>
+		<div class="guide-lower">
+			<div class="video">
+				<div class="youtube-icon">
+					<img src="img/youtube.png">
+				</div>
+			</div>
+			<div class="guide-slider">
+				<div class="slider-buttons">
+					<div id="1" onclick="button_toggle()" class="slide-button clicked">
+						1
+					</div>
+					<div id="2" onclick="button_toggle1()" class="slide-button">
+						2
+					</div>
+					<div id="3" onclick="button_toggle2()" class="slide-button">
+						3
+					</div>
+				</div>
+				<div id="slide1"class="guide-slide">
+					<div class="guide-slide-title">
+						Впишите свои характеристики 
+					</div>	
+					<div class="guide-slide-subtitle">
+						Напишите свой возраст, рост и вес, предпочитаемую диету и количество калорий, или оставьте стандартные. Опционально можно заполнить схему калорий. Вписываемые данные анонимны и не сохраняются.
+					</div>
+				</div>
+				<div id="slide2"class="guide-slide">
+					<div class="guide-slide-title">
+						Хуй 
+					</div>	
+					<div class="guide-slide-subtitle">
+						Напишите свой возраст, рост и вес, предпочитаемую диету и количество калорий, или оставьте стандартные. Опционально можно заполнить схему калорий. Вписываемые данные анонимны и не сохраняются.
+					</div>
+				</div>
+				<div id="slide3" class="guide-slide">
+					<div class="guide-slide-title">
+						Дери
+					</div>	
+					<div class="guide-slide-subtitle">
+						Напишите свой возраст, рост и вес, предпочитаемую диету и количество калорий, или оставьте стандартные. Опционально можно заполнить схему калорий. Вписываемые данные анонимны и не сохраняются.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div  class="creator">
+	<div class="container">
+		<div class="creator-upper">
+			<div class="creator-title">
+				Создать ваше меню
+			</div>
+			<div class="creator-subtitle">
+				Заполните форму для создания меню на основе ваших данных
+			</div>
+		</div>
+		<div class="creator-lower">
+			<form id="creator-form">
+				<div class="creator-specifications">
+					<div id="creator-preferences"class="creator-preferences">
+						<label for="select-preferences">
+							Предпочтения в еде
+						</label>
+						<div id="parent">
+							<select class="select-pref" for="creator-form" name="select-preferences">
+								<option value="no">Нет</option>
+								<option value="onions">Без лука</option>
+								<option value="spicy">Не острое</option>
+								<option value="sour">Не кислое</option>
+								<option value="nuts">Без орехов</option>
+								<option value="lactose">Без лактозы</option>
+								<option value="gluten">Без глютена</option>
+								
+							</select>
+							
+						</div>
+						
+						<div id="preference-b" onclick="myFunction()" class="preferences-button">
+							+
+						</div>
+						
+					</div>
+					<div class="creator-diet">
+						<label for="select-diet">
+							Выберите вашу диету
+						</label>
+						<select form="creator-form" name="select-diet">
+							<option value="vegan">Веганская еда</option>
+							<option value="vegetarian">Вегетарианская еда</option>
+							<option value="halal">Халальная еда</option>
+							<option value="kosher">Кошерная еда</option>
+							<option value="hinduism">Индуистская еда</option>
+						</select>
+					</div>
+				</div>
+				<div class="creator-calculator">
+					<div id="divage" class="creator-calculator-item">
+						<label>
+							Возраст
+						</label>
+						<input type="number" id="age" placeholder="" name="age" required>
+					</div>
+					<div id="divsex" class="creator-calculator-item">
+						<label for="sex">
+							Пол
+						</label>
+						<select form="creator-form" name="sex">
+							<option value="male">Мужской</option>
+							<option value="female">Женский</option>
+							
+						</select>
+					</div>
+					<div id="divheight" class="creator-calculator-item">
+						<label>
+							Рост
+						</label>
+						<input type="number" id="height" placeholder="" name="height" required>
+					</div>
+					<div id="divweight" class="creator-calculator-item">
+						<label>
+							Вес
+						</label>
+						<input type="number" id="weight" placeholder="" name="weight" required>
+					</div>
+
+					
+					
+					
+				</div>
+			</form>
+			<div class="button-outer">
+				<button form="creator-form" class="creator-button">
+					Создать
+				</button>
+			</div>
+			
+		</div>
+	</div>
+</div>
+<div id="team"class="team">
+	<div class="container">
+		<div class="team-inner">
+			<div class="team-title">
+				Наша команда
+			</div>
+			<div class="team-subtitle">
+				Кто мы такие?
+			</div>
+			<div class="team-cards">
+				<div class="team-card">
+					<img src="img/abylkas.png">
+					<div class="team-card-title">
+						Жумагул Абылкас
+					</div>
+					<div class="team-card-subtitle">
+						Back-End
+					</div>
+				</div>
+				<div class="team-card">
+					<img src="img/ali.png">
+					<div class="team-card-title">
+						Жусупов Али
+					</div>
+					<div class="team-card-subtitle">
+						Back-End
+					</div>
+				</div>
+				<div class="team-card">
+					<img src="img/amir.png">
+					<div class="team-card-title">
+						Жаксылык Амир
+					</div>
+					<div class="team-card-subtitle">
+						Back-End
+					</div>
+				</div>
+				<div class="team-card">
+					<img src="img/aidar.png">
+					<div class="team-card-title">
+						Беготаев Айдар
+					</div>
+					<div class="team-card-subtitle">
+						Front-End
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="contacts"class="contacts">
+	<div class="container">
+		<div class="contacts-inner">
+			<div class="contacts-title">
+				По всем вопросам, обращайтесь
+			</div>
+			<div class="contacts-subtitle">
+				 В наши социальные сети и мы вам обязательно поможем!
+			</div>
+			<div class="contacts-buttons">
+				<a href="#" class="contacts-button"><img src="img/telegram.png">Telegram</a>
+				<a href="#" class="contacts-button"><img src="img/whatsapp.png">Whatsapp</a>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+	
+	<div class="footer-upper">
+		<div class="container">
+			<div class="footer-card">
+				<div class="footer-card-title">
+					Aesculapius
+				</div>
+				<div class="footer-card-links">
+					<div class="footer-card-link">
+						Али Жусупов
+					</div>
+					<div class="footer-card-link">
+						Жаксылык Амир
+					</div>
+					<div class="footer-card-link">
+						Жумагул Абылкас
+					</div>
+					<div class="footer-card-link">
+						Беготаев Айдар
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-card">
+				<div class="footer-card-title">
+					Содержание
+				</div>
+				<div class="footer-card-links">
+					<div class="footer-card-link">
+						<a href="#desc">Краткая информация</a>
+					</div>
+					<div class="footer-card-link">
+						<a href="#creator">Создать меню</a>
+					</div>
+					<div class="footer-card-link">
+						<a href="#team">О нас</a>
+					</div>
+					<div class="footer-card-link">
+						<a href="#contacts">Контакты</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-lower">
+		<div class="container">
+			<div class="copyright">
+				Copyright ©Aesculapius, 2023 Все права защищены. 
+			</div>
+			<div class="social-media">
+				<a href="#"><img src="img/telegram.png"></a>
+				<a href="#"><img src="img/whatsapp.png"></a>	
+			</div>
+		</div>
+	</div>
+</footer>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
