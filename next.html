@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
-<body>
+<body >
 <header>
 	<div class="container" id="nextHeader">
 		<ul>
@@ -18,12 +18,12 @@
 				<a href="index.html#contacts"><li>Контакты</li></a>
 			</nav>
 		</ul>
-		<div class="search">
-			<input type="text" placeholder="Искать рецепт блюда"name="search">
-		</div>
+		<form id="searchform" class="search">
+			<input id="search" onclick="myFunction()" type="text" placeholder="Искать рецепт блюда" name="search">
+		</form>
 	</div>
 </header>
-<div class="main">
+<div  class="main">
 	<div class="container">
 		<div class="today">
 			<div class="today-title">
@@ -34,17 +34,17 @@
 					<img src="img/breakfast.png">
 					Завтрак
 				</a>
-				<a href="#ex1" rel="modal:open" class="today-card lunch">
+				<a href="#ex2" rel="modal:open" class="today-card lunch">
 					<img src="img/lunch.png">
 					Обед
 				</a>
-				<a href="#ex1" rel="modal:open" class="today-card dinner">
+				<a href="#ex3" rel="modal:open" class="today-card dinner">
 					<img src="img/dinner.png">	
 					Ужин
 				</a>
 			</div>
 		</div>
-		<div class="plan">
+		<div  class="plan">
 			<div class="plan-title">
 				План на неделю
 			</div>
@@ -217,7 +217,7 @@
 								
 							</div>
 						</a>
-						<a href="#ex1" rel="modal:open" class="meal lh">
+						<a href="#ex2" rel="modal:open" class="meal lh">
 							<div class="meal-title">
 								Обед
 							</div>
@@ -225,7 +225,7 @@
 								
 							</div>
 						</a>
-						<a href="#ex1" rel="modal:open" class="meal dr">
+						<a href="#ex3" rel="modal:open" class="meal dr">
 							<div class="meal-title">
 								Ужин
 							</div>
@@ -346,6 +346,275 @@
 </footer>
 
 <div id="ex1" class="modal">
+	<div class="modal-title">
+			Breakfast
+	</div>
+	<div class="modal-content">
+		<div class="modal-img">
+			<img src="img/breakfast.png">
+		</div>
+		<div class="modal-text">
+			<div class="modal-subtitle">
+				Gluten-Free Pancakes with Maple Syrup and Fresh Fruit
+
+			</div>
+			<div class="modal-ingridients">
+				<div class="ingridients-title">
+					Ингридиенты
+				</div>
+				<div class="ingridients-text">
+					<ul>
+						<li>1 cup of gluten-free pancake mix</li>
+						<li>3/4 cup of non-dairy milk</li>
+						<li>2 tbsp of maple syrup</li>
+						<li>Fresh fruit (such as berries or sliced bananas)</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="instructions">
+		<div class="instructions-title">
+			Инструкции
+		</div>
+		<div class="instructions-text">
+			<ul>
+				<li>In a mixing bowl, combine gluten-free pancake mix and non-dairy milk</li>
+				<li>Add in non-dairy milk and maple syrup, and mix until smooth.
+</li>
+				<li>Heat a non-stick skillet over medium heat and lightly grease with cooking spray or oil	</li>
+				<li>Use a 1/4 cup measuring cup to scoop batter into the skillet.</li>
+				<li>Cook for 2-3 minutes on each side or until golden brown.</li>
+				<li>Serve hot with maple syrup and fresh fruit.</li>
+			</ul>
+		</div>
+	</div>
+	<div class="macronutrients">
+		<div class="macronutrients-title">
+			Макронутриенты
+		</div>
+		<div class="macronutrients-text">
+			<ul>
+				<li>Calories: 200 kcal
+</li>
+				<li>
+					Protein: 5g
+				</li>
+				<li>
+					Carbohydrates: 36g
+				</li>
+				<li>
+					Fat: 3g
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="ex2" class="modal">
+	<div class="modal-title">
+			Lunch
+	</div>
+	<div class="modal-content">
+		<div class="modal-img">
+			<img src="img/lunch.png">
+		</div>
+		<div class="modal-text">
+			<div class="modal-subtitle">
+				Quinoa Bowl with Roasted Vegetables and Chickpeas
+
+			</div>
+			<div class="modal-ingridients">
+				<div class="ingridients-title">
+					Ингридиенты
+				</div>
+				<div class="ingridients-text">
+					<ul>
+						<li>1/2 cup of quinoa</li>
+						<li>1 cup of mixed roasted vegetables (such as sweet potatoes, Brussels sprouts, and carrots)</li>
+						<li>1/2 cup of chickpeas</li>
+						<li>1 tbsp of olive oil</li>
+						<li>Salt and pepper to taste</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="instructions">
+		<div class="instructions-title">
+			Инструкции
+		</div>
+		<div class="instructions-text">
+			<ul>
+				<li>Preheat the oven to 400°F.</li>
+				<li>Rinse quinoa and add it to a pot with 1 cup of water.
+</li>
+				<li>Bring to a boil, reduce heat, and simmer for 15-20 minutes until all the water is absorbed.</li>
+				<li>In a mixing bowl, toss mixed roasted vegetables with olive oil, salt, and pepper.</li>
+				<li>Roast the vegetables in the preheated oven for 20-25 minutes until tender and lightly browned.</li>
+				<li>Add cooked quinoa and chickpeas to a bowl.</li>
+				<li>Top with the roasted vegetables.</li>
+			</ul>
+		</div>
+	</div>
+	<div class="macronutrients">
+		<div class="macronutrients-title">
+			Макронутриенты
+		</div>
+		<div class="macronutrients-text">
+			<ul>
+				<li>Calories: 155 kcal
+</li>
+				<li>
+					Protein: 6g
+				</li>
+				<li>
+					Carbohydrates: 24g
+				</li>
+				<li>
+					Fat: 4g
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="ex1" class="modal">
+	<div class="modal-title">
+			Breakfast
+	</div>
+	<div class="modal-content">
+		<div class="modal-img">
+			<img src="img/breakfast.png">
+		</div>
+		<div class="modal-text">
+			<div class="modal-subtitle">
+				Gluten-Free Pancakes with Maple Syrup and Fresh Fruit
+
+			</div>
+			<div class="modal-ingridients">
+				<div class="ingridients-title">
+					Ингридиенты
+				</div>
+				<div class="ingridients-text">
+					<ul>
+						<li>1 cup of gluten-free pancake mix</li>
+						<li>3/4 cup of non-dairy milk</li>
+						<li>2 tbsp of maple syrup</li>
+						<li>Fresh fruit (such as berries or sliced bananas)</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="instructions">
+		<div class="instructions-title">
+			Инструкции
+		</div>
+		<div class="instructions-text">
+			<ul>
+				<li>In a mixing bowl, combine gluten-free pancake mix and non-dairy milk</li>
+				<li>Add in non-dairy milk and maple syrup, and mix until smooth.
+</li>
+				<li>Heat a non-stick skillet over medium heat and lightly grease with cooking spray or oil	</li>
+				<li>Use a 1/4 cup measuring cup to scoop batter into the skillet.</li>
+				<li>Cook for 2-3 minutes on each side or until golden brown.</li>
+				<li>Serve hot with maple syrup and fresh fruit.</li>
+			</ul>
+		</div>
+	</div>
+	<div class="macronutrients">
+		<div class="macronutrients-title">
+			Макронутриенты
+		</div>
+		<div class="macronutrients-text">
+			<ul>
+				<li>Calories: 200 kcal
+</li>
+				<li>
+					Protein: 5g
+				</li>
+				<li>
+					Carbohydrates: 36g
+				</li>
+				<li>
+					Fat: 3g
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="ex3" class="modal">
+	<div class="modal-title">
+			Dinner
+	</div>
+	<div class="modal-content">
+		<div class="modal-img">
+			<img src="img/dinner.png">
+		</div>
+		<div class="modal-text">
+			<div class="modal-subtitle">
+				Baked Salmon with Steamed Vegetables
+
+
+			</div>
+			<div class="modal-ingridients">
+				<div class="ingridients-title">
+					Ингридиенты
+				</div>
+				<div class="ingridients-text">
+					<ul>
+						<li>4 oz salmon fillet
+</li>
+						<li>1 cup of mixed steamed vegetables (such as broccoli, carrots, and snow peas)</li>
+						<li>1 tbsp of olive oil</li>
+						<li>Salt and pepper to taste</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="instructions">
+		<div class="instructions-title">
+			Инструкции
+		</div>
+		<div class="instructions-text">
+			<ul>
+				<li>Preheat the oven to 400°F.</li>
+				<li>Season salmon filet with salt and pepper on both sides.
+
+</li>
+				<li>Drizzle olive oil on top of the salmon.</li>
+				<li>In a mixing bowl, toss mixed roasted vegetables with olive oil, salt, and pepper.</li>
+				<li>Bake salmon in the preheated oven for 12-15 minutes or until cooked through.
+</li>
+				<li>In a separate pot, steam mixed vegetables until tender.
+</li>
+				<li>Serve baked salmon with steamed vegetables.</li>
+			</ul>
+		</div>
+	</div>
+	<div class="macronutrients">
+		<div class="macronutrients-title">
+			Макронутриенты
+		</div>
+		<div class="macronutrients-text">
+			<ul>
+				<li>Calories: 271 kcal
+</li>
+				<li>
+					Protein: 22g
+				</li>
+				<li>
+					Carbohydrates: 7g
+				</li>
+				<li>
+					Fat: 17g
+				</li>
+			</ul>
+		</div>
+	</div>
 </div>
 
 <script type="text/javascript" src="js/main.js"></script>
