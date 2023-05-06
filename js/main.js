@@ -106,3 +106,30 @@ function button_toggle2(){
   $2.setAttribute("class", "slide-button");
   $1.setAttribute("class", "slide-button");
 }
+
+
+function myFunction(){
+  const product = document.createElement('a');
+  product.setAttribute("href", "#ex1");
+  product.setAttribute("rel", "modal:open");
+  product.setAttribute("class", "result");
+product.setAttribute("style", "position:absolute; background-color:#EEEEEE");
+    product.setAttribute("id", "aaaaa");
+    product.setAttribute("onclick", "func()");
+  product.innerHTML=`
+  <div class="result-image">
+    <img src="img/breakfast.png">
+  </div>
+  <div class="result-text">
+      <div class="result-title">Breakfast</div>
+      <div class="result-subtitle">Gluten-Free Pancakes with Maple Syrup and Fresh Fruit
+  </div>
+  </div>
+  `
+
+  document.getElementById('searchform').appendChild(product);
+}
+function func(){
+  const product = document.getElementById('aaaaa');
+  product.outerHTML="";
+}
