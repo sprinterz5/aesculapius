@@ -528,3 +528,85 @@ input::-webkit-inner-spin-button {
 	display: flex;
 	justify-content: center;
 }
+#nextHeader{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.search{
+	position: relative;
+	margin-top: 35px;
+}
+.search input{
+
+	background-color: #EEEEEE;
+	border-color: transparent;
+	padding: 12px 0 12px 60px;
+	font-family: Inter;
+	font-size: 18px;
+	color: #5F6368;
+	border-radius: 25px;
+}
+.search::before{
+	position: absolute;
+	top: 25%;
+	left: 20px;
+	content: url("../img/search.png");
+}
+.today-title{
+	font-family: "Source Code Pro";
+	margin: 35px 0;
+	font-weight: 500;
+	font-size: 27px;
+}
+.today-cards{
+	display: flex;
+	justify-content: space-between;
+}
+.today-card{
+	border-radius: 50px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.today-card img{
+	margin-bottom: 16px;
+}
+.today-card{
+	color: black;
+	text-decoration: none;
+	font-family: "Source Code Pro";
+	padding-bottom: 23px;
+	font-weight: 500;
+	font-size: 24px;
+	box-shadow: 0px 5px 10px black;
+}
+.plan{
+	font-family: "Source Code Pro";
+	
+	margin-top: 100px;
+}
+.days{
+	display: flex;
+	justify-content: space-between;
+}
+.plan-title{
+	font-weight: 500;
+	font-size: 27px;
+}
+.day{
+	margin-top: 35px;
+}
+.day-title{
+	font-weight: 500;
+	font-size: 24px;
+	margin-bottom: 16px;
+}
+.meal-title{
+	font-weight: 500;
+	font-size: 20px;
+}
+a.meal{
+	color: black;
+	text-decoration: none;
+}
