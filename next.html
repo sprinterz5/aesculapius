@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
+<body>
+<header>
+	<div class="container" id="nextHeader">
+		<ul>
+			<a href="index.html" class="logo"><li>aesculapius</li></a>
+			<nav>
+				<a href="index.html#creator"><li>Создать меню</li></a>
+				<a href="index.html#team"><li>О нас</li></a>
+				<a href="index.html#contacts"><li>Контакты</li></a>
+			</nav>
+		</ul>
+		<div class="search">
+			<input type="text" placeholder="Искать рецепт блюда"name="search">
+		</div>
+	</div>
+</header>
+<div class="main">
+	<div class="container">
+		<div class="today">
+			<div class="today-title">
+				Еда на сегодня
+			</div>
+			<div class="today-cards">
+				<a href="#ex1" rel="modal:open" class="today-card breakfast">
+					<img src="img/breakfast.png">
+					Завтрак
+				</a>
+				<a href="#ex1" rel="modal:open" class="today-card lunch">
+					<img src="img/lunch.png">
+					Обед
+				</a>
+				<a href="#ex1" rel="modal:open" class="today-card dinner">
+					<img src="img/dinner.png">	
+					Ужин
+				</a>
+			</div>
+		</div>
+		<div class="plan">
+			<div class="plan-title">
+				План на неделю
+			</div>
+			<div class="days">
+				<div class="day">
+					<div class="day-title">
+						Понедельник
+					</div>
+					<div class="meals">
+						<a href="#ex1" rel="modal:open" class="meal bf">
+							<div class="meal-title">
+								Завтрак
+							</div>
+							<div class="meal-content">
+								
+							</div>
+						</a>
+						<a href="#ex1" rel="modal:open" class="meal lh">
+							<div class="meal-title">
+								Обед
+							</div>
+							<div class="meal-content">
+								
+							</div>
+						</a>
+						<a href="#ex1" rel="modal:open" class="meal dr">
+							<div class="meal-title">
+								Ужин
+							</div>
+							<div class="meal-content">
+								
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="day">
+					<div class="day-title">
+						Вторник
+					</div>
+					<div class="meals">
+						<a href="#ex1" rel="modal:open" class="meal bf">
+							<div class="meal-title">
+								Завтрак
+							</div>
+							<div class="meal-content">
+								
+							</div>
+						</a>
+						<a href="#ex1" rel="modal:open" class="meal lh">
+							<div class="meal-title">
+								Обед
+							</div>
+							<div class="meal-content">
+								
+							</div>
+						</a>
+						<a href="#ex1" rel="modal:open" class="meal dr">
+							<div class="meal-title">
+								Ужин
+							</div>
+							<div class="meal-content">
+								
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="day">
+					<div class="day-title">
+						Среда
+					</div>
+					<div class="meals">
+						<a href="#ex1" rel="modal:open" class="meal bf">
+							<div class="meal-title">
+								Завтрак
+							</div>
+							<div class="meal-content">
+								
+							</div>
+						</a>
+						<a href="#ex1" rel="modal:open" class="meal lh">
+							<div class="meal-title">
+								Обед
+							</div>
+							<div class="meal-content">
+								
+							</div>
+						</a>
+						<a href="#ex1" rel="modal:open" class="meal dr">
+							<div class="meal-title">
+								Ужин
+							</div>
+							<div class="meal-content">
+								
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="day">
+					<div class="day-title">
+						Четверг
+					</div>
+					<div class="meals">
+						<a href="#ex1" rel="modal:open" class="meal bf">
+							<div class="meal-title">
+								Завтрак
+							</div>
+							<div class="meal-content">
+								
+							</div>
+						</a>
+						<a href="#ex1" rel="modal:open" class="meal lh">
+							<div class="meal-title">
+								Обед
+							</div>
+							<div class="meal-content">
+								
+							</div>
+						</a>
+						<a href="#ex1" rel="modal:open" class="meal dr">
+							<div class="meal-title">
+								Ужин
+							</div>
+							<div class="meal-content">
+								
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="day">
+					<div class="day-title">
+						Пятница
+					</div>
+					<div class="meals">
+						<a href="#ex1" rel="modal:open" class="meal bf">
+							<div class="meal-title">
+								Завтрак
+							</div>
+							<div class="meal-content">
+								
+							</div>
+						</a>
+						<a href="#ex1" rel="modal:open" class="meal lh">
+							<div class="meal-title">
+								Обед
+							</div>
+							<div class="meal-content">
+								
+							</div>
+						</a>
+						<a href="#ex1" rel="modal:open" class="meal dr">
+							<div class="meal-title">
+								Ужин
+							</div>
+							<div class="meal-content">
+								
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="day">
+					<div class="day-title">
+						Суббота
+					</div>
+					<div class="meals">
+						<a href="#ex1" rel="modal:open" class="meal bf">
+							<div class="meal-title">
+								Завтрак
+							</div>
+							<div class="meal-content">
+								
+							</div>
+						</a>
+						<a href="#ex1" rel="modal:open" class="meal lh">
+							<div class="meal-title">
+								Обед
+							</div>
+							<div class="meal-content">
+								
+							</div>
+						</a>
+						<a href="#ex1" rel="modal:open" class="meal dr">
+							<div class="meal-title">
+								Ужин
+							</div>
+							<div class="meal-content">
+								
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="day">
+					<div class="day-title">
+						Воскресенье
+					</div>
+					<div class="meals">
+						<a href="#ex1" rel="modal:open" class="meal bf">
+							<div class="meal-title">
+								Завтрак
+							</div>
+							<div class="meal-content">
+								
+							</div>
+						</a>
+						<a href="#ex1" rel="modal:open" class="meal lh">
+							<div class="meal-title">
+								Обед
+							</div>
+							<div class="meal-content">
+								
+							</div>
+						</a>
+						<a href="#ex1" rel="modal:open" class="meal dr">
+							<div class="meal-title">
+								Ужин
+							</div>
+							<div class="meal-content">
+								
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+<div id="contacts"class="contacts">
+	<div class="container">
+		<div class="contacts-inner">
+			<div class="contacts-title">
+				По всем вопросам, обращайтесь
+			</div>
+			<div class="contacts-subtitle">
+				 В наши социальные сети и мы вам обязательно поможем!
+			</div>
+			<div class="contacts-buttons">
+				<a href="#" class="contacts-button"><img src="img/telegram.png">Telegram</a>
+				<a href="#" class="contacts-button"><img src="img/whatsapp.png">Whatsapp</a>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+	
+	<div class="footer-upper">
+		<div class="container">
+			<div class="footer-card">
+				<div class="footer-card-title">
+					Aesculapius
+				</div>
+				<div class="footer-card-links">
+					<div class="footer-card-link">
+						Али Жусупов
+					</div>
+					<div class="footer-card-link">
+						Жаксылык Амир
+					</div>
+					<div class="footer-card-link">
+						Жумагул Абылкас
+					</div>
+					<div class="footer-card-link">
+						Беготаев Айдар
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-card">
+				<div class="footer-card-title">
+					Содержание
+				</div>
+				<div class="footer-card-links">
+					<div class="footer-card-link">
+						<a href="index.html#desc">Краткая информация</a>
+					</div>
+					<div class="footer-card-link">
+						<a href="index.html#creator">Создать меню</a>
+					</div>
+					<div class="footer-card-link">
+						<a href="index.html#team">О нас</a>
+					</div>
+					<div class="footer-card-link">
+						<a href="index.html#contacts">Контакты</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-lower">
+		<div class="container">
+			<div class="copyright">
+				Copyright ©Aesculapius, 2023 Все права защищены. 
+			</div>
+			<div class="social-media">
+				<a href="#"><img src="img/telegram.png"></a>
+				<a href="#"><img src="img/whatsapp.png"></a>	
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div id="ex1" class="modal">
+</div>
+
+<script type="text/javascript" src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+</body>
+</html>
