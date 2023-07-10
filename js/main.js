@@ -108,7 +108,7 @@ function button_toggle2(){
 }
 
 
-function myFunction(){
+function myfunction(){
   const product = document.createElement('a');
   product.setAttribute("href", "#ex1");
   product.setAttribute("rel", "modal:open");
